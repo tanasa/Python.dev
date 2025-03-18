@@ -1,0 +1,44 @@
+Network Fundamentals
+
+Computer Networking Essentials*, 3 units
+Switching and Routing, 3 units
+TCP/IP Essentials, 2 units
+Wireless Communications and Mobile Antenna Design, Introduction, 3 units
+
+Linux System Administration
+
+Linux, Introduction, 2.5 units
+Linux System and Network Administration*, 3 units
+Linux System Performance in the Cloud and Data Center, 3 units
+Linux Systems Programming, 3 units
+Relational Database Design and SQL Programming*, 3 units
+Perl Programming, Comprehensive, 2 units
+Python for Programmers, 3 units  
+
+Data Center Technologies
+
+System Virtualization Fundamentals*, 2.5 units
+Storage Technology in Data Centers, 3 units
+Cloud Computing, Introduction, 0.5 unit   
+Programming for Cloud Computing: Amazon Web Services, 3 units
+VMware vSphere: Configuration and Management, 3.5 units
+VMware vSphere: Optimize and Scale, 3.5 units
+IO Concepts and Protocols: PCI Express, Ethernet, and Fibre Channel, 3 units 
+
+DevOps
+
+Devops Technologies, 3 units
+Software Development Standards, Quality and Customer Experience, 2 units
+Software Value Engineering, Monetization Methods, Techniques & Industry Practice, 2 units   
+
+Systems and Internet Security
+
+Information Security Essentials*, 3 units
+Mobile Payments, e-Commerce Security, and Cryptocurrency, 3 units
+
+Related Electives
+
+C Programming for Beginners, 2 units
+Python Programming for Beginners, 1.5 units
+Java Programming for Beginners, 2 units
+LAMP: Linux Based Web Application Development - Apache, MySQL, PHP, 3 units

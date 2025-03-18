@@ -1,0 +1,25 @@
+framework for interactive games:
+
+1. guess my number
+I have a number between 1 and 100 in my head. You need guess my number with 5 chances. I provide you the following 3 possible responses based your guess: too small, too large, correct.
+
+50 -> too small
+75 -> too large
+63
+...
+
+2. Bagels
+I have a 3-digit number (no repetitive digit) in my head. You need guess my number. (my number 123)
+Bagels: no digit is correct (you guess 456 -> Bagels)
+Pico: one digit is correct but in a wrong position (you guess 412 -> Pico Pico)
+Fermi: one digit is correct and in the right position (you guess 213 -> Fermi Pico Pico)
+
+
+3. Hangman
+I have a word in my head. You need to my word. (My word hello)
+You guess individual letters
+_____
+'e' -> _e___
+'a' -> _e___
+'o' -> _e__o
+'l' -> _ello

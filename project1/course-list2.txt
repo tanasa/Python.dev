@@ -1,0 +1,45 @@
+C Programming
+
+C Programming for Beginners, 2 units
+C Programming, Advanced*, 3 units
+
+C++ Programming
+
+C++ Programming, Comprehensive*, 3 units
+​Data Structures and Algorithms Using C++, 3 units
+
+Java Programming
+
+Java Programming for Beginners, 2 units
+Java Programming, Comprehensive*, 3 units
+Data Structures and Algorithms Using Java, 3 units
+XML Essentials, 2 units
+JUnit Test Framework, 1.5 units
+
+Scripting Languages
+
+Perl Programming, Comprehensive*, 2 units
+Python Programming for Beginners, 1.5 units
+Python for Programmers*, 3 units
+
+Windows Programming
+
+C# .NET Programming, Comprehensive*, 3 units
+C# .NET Programming, Advanced, 3 units
+
+Mobile Device Programming
+
+Developing Applications for iPhone and iPad, Introduction, 3 units
+Developing Applications for iPhone and iPad, Advanced, 3 units
+Developing Applications for Android Mobile Devices, 2 units
+Developing Applications for Android Mobile Devices, Advanced, 2 units
+
+Advanced Programming
+
+Go Programming, Fundamentals, 3 units
+Object-Oriented Analysis and Design*, 3 units
+Object-Oriented Development: Architecture and Design Patterns, Advanced, 3 units
+Introduction to Machine Learning and Data Mining, 3 units
+Hadoop: Distributed Processing of Big Data, 3 units
+Mastering Data Structures and Algorithms: A Practical Approach, 3 units
+Computational Intelligence, Introduction, 1.5 units

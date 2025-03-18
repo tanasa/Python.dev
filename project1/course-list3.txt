@@ -1,0 +1,44 @@
+Working with the Web
+
+Web Technologies, Introduction, 1 unit
+Cloud Computing, Introduction, 0.5 unit
+Programming for Cloud Computing: Amazon Web Services, 3 units
+Web Applications Testing, Comprehensive, 3 units
+Designing, Building and Integrating RESTful API, 2 units
+User Experience Design Fundamentals, 3 units
+Mobile Payments, e-Commerce Security, and Cryptocurrency, 3 units
+
+Java EE Framework
+
+Developing Enterprise Java Applications with Spring Boot and Microservices*, 3 units
+Java Programming, Comprehensive, 3 units
+
+JavaScript Framework
+
+Introduction to Web Programming: JavaScript and PHP, 2 units
+JavaScript and AJAX, Comprehensive*, 3 units
+Developing JavaScript-based Rich Web UI with JQuery, 2 units
+Web Framework Using JavaScript: The MEAN Stack, 3 units
+Web Application Development Using React, Redux and TypeScript, 2 units
+
+Windows Framework
+
+C# .NET Programming, Comprehensive, 3 units
+C# .NET Programming, Advanced, 3 units
+
+Open Source Web Framework
+
+LAMP: Linux Based Web Application Development – Apache, MySQL, PHP, 3 units
+Responsive Web Design with Open Source Frameworks, 2 units
+
+Internet Programming Languages
+
+Java Programming for Beginners, 2 units
+Perl Programming, Comprehensive, 2 units
+Python Programming for Beginners, 1.5 units
+Python for Programmers, 3 units
+HTML Fundamentals, 2 units
+HTML5: The Living Language, 3 units
+Designing with Cascading Style Sheets: Fundamentals, 2 units
+Designing with Cascading Style Sheets: Advanced, 2 units
+XML Essentials, 2 units
