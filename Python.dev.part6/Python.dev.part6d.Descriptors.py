@@ -7,7 +7,50 @@
 
 
 
+# In[1]:
+
+
+print('''
+
+About attributes :
+
+📌 Special kinds of attributes
+
+Instance attributes → defined in __init__() with self
+
+Class attributes → shared across all instances
+
+Dynamic attributes → added after object creation
+
+Where are attributes stored ?
+
+object.__dict__
+
+''')
+
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+fido = Dog("Fido")
+print(fido.__dict__)  # {'name': 'Fido'}
+
+print('''
+
+What are dynamic attributes?
+
+Dynamic attributes are attributes that you add to an object after it's been created, not defined in the class body or __init__.
+
+''')
+
+
 # In[ ]:
+
+
+
+
+
+# In[2]:
 
 
 print("Descriptors :")
@@ -91,13 +134,150 @@ And so are its subclasses: Usd, Euro, Pound, Rupee.
 ''')
 
 
-# In[7]:
+# In[ ]:
 
 
 print("An example given in the class :")
 
 
-# In[14]:
+# In[ ]:
+
+
+# This defines a descriptor NameDescriptor that manages access to a name attribute on a Person object.
+# Descriptors are a way to customize attribute access, like what happens when you get, set, or delete an attribute.
+
+
+# In[ ]:
+
+
+# 🧱 NameDescriptor class
+# This is a descriptor because it defines at least one of the special methods:
+# __get__(self, instance, owner)
+# __set__(self, instance, value)
+# __delete__(self, instance)
+# It manages access to an internal attribute (_name) on the Person object.
+
+class NameDescriptor:
+    
+    # instance is a Person object
+    # owner is Person class
+    
+    def __get__(self, instance, owner):
+        print('__get__ is called')
+        try:
+            return instance._name
+        except AttributeError:
+            return 'World'
+
+    def __set__(self, instance, value):
+        print('__set__ is called')
+        instance._name = value
+
+    def __delete__(self, instance):
+        print('__delete__ is called')
+        del instance._name
+
+
+class Person:
+    def __init__(self, name):
+        self._name = name
+
+    # def _get_name(self):
+    #     return self._name
+    #
+    # name = property(fget=_get_name)
+    
+    name = NameDescriptor()  # Connects descriptor to the Person class
+
+# The Person class has an attribute name that is a descriptor
+# It operates on the internal _name field
+
+if __name__ == '__main__':
+    
+   john = Person("John")    # sets _name directly
+   print(john.name)         # triggers __get__ → prints and returns "John"
+
+   john.name = "Johnny"     # triggers __set__ → updates _name
+   print(john.name)         # __get__ → returns "Johnny"
+
+   del john.name            # triggers __delete__ → removes _name
+   print(john.name)         # __get__ → catches AttributeError → returns "World"
+
+
+# In[ ]:
+
+
+print('''
+
+__get__
+
+Called when you access person.name
+Tries to return instance._name
+If _name doesn’t exist (e.g. it was deleted), returns "World"
+
+🔹 __set__
+
+Called when you do person.name = "Alice"
+Stores the value inside the instance under _name
+
+__delete__
+
+Called when you do del person.name
+Deletes the _name attribute from the instance.
+
+''')
+
+
+# In[ ]:
+
+
+print("A Simplified Version Using @property :")
+
+class Person:
+    def __init__(self, name):
+        self._name = name
+
+    @property
+    def name(self):
+        print('@property getter is called')
+        return getattr(self, '_name', 'World')
+
+    @name.setter
+    def name(self, value):
+        print('@property setter is called')
+        self._name = value
+
+    @name.deleter
+    def name(self):
+        print('@property deleter is called')
+        del self._name
+
+
+john = Person("John")
+print(john.name)      # Triggers getter
+john.name = "Johnny"  # Triggers setter
+print(john.name)
+del john.name         # Triggers deleter
+print(john.name)      # Triggers fallback return "World"
+
+# When to use each?
+# Use @property when managing simple attribute access with logic (e.g., validation, fallback)
+# Use a descriptor class if you want to reuse the logic across multiple attributes or classes, or implement advanced behaviors
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+print("A more complex example given in the class :")
+
+
+# In[ ]:
 
 
 class CurrencyType:
@@ -184,7 +364,7 @@ if __name__ == '__main__':
 
 
 
-# In[15]:
+# In[ ]:
 
 
 print(
@@ -270,7 +450,7 @@ Conversion happens via explicit methods (like .from_usd() and .to_usd())
 ''')
 
 
-# In[8]:
+# In[ ]:
 
 
 class CurrencyConverter:
@@ -331,7 +511,7 @@ class Currency:
 
 
 
-# In[13]:
+# In[ ]:
 
 
 print('''
@@ -360,13 +540,13 @@ class CurrencyType:
         setattr(instance, f"_{self.name}", value)     # write e.g., instance._usd = value
 
 
-# In[17]:
+# In[ ]:
 
 
 print("Descriptor base class for each currency type")
 
 
-# In[16]:
+# In[ ]:
 
 
 # Descriptor base class for each currency type
@@ -444,6 +624,70 @@ if __name__ == '__main__':
     currency = Currency(rupee=10000)
     print(currency)
     # Output: $115.01 USD = €105.81 EUR = £88.56 GBP = ₹10000.0 INR
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+print(" Dynamic Attributes :")
+
+
+# In[ ]:
+
+
+print('''
+
+Dynamic attributes are attributes that you add to an object after it's been created, not defined in the class body or __init__.
+
+✅ They’re created on the fly using assignment syntax or functions like setattr().
+
+''')
+
+class Animal:
+    pass
+
+dog = Animal()
+dog.name = "Fido"            # dynamic attribute
+dog.age = 5                  # another dynamic attribute
+
+print(dog.name)              # Fido
+print(dog.age)               # 5
+
+print(dog.__dict__)  # {'name': 'Fido', 'age': 5}
+
+
+print('''Alternative: Using setattr()''')
+
+# You can also add dynamic attributes like this:
+
+setattr(dog, "breed", "Labrador")
+print(dog.breed)  # Labrador
+
+# equivalent with 
+
+dog.breed = "Labrador"
+
+print('''Detecting dynamic attributes''')
+
+if hasattr(dog, 'age'):
+    print("Age exists")
+
+print(getattr(dog, 'name'))      # → Fido
+print(dog.__dict__)              # shows all instance-level attributes
+
+# Risk	: Easy to create unintended fields by mistake
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:

@@ -7523,7 +7523,89 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7ea2706e-01ea-4507-b592-033fbc1f8ca1">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ae0b6078-6ac1-49e4-94b8-bbccb98e4a2c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'''</span>
+
+<span class="s1">About attributes :</span>
+
+<span class="s1">📌 Special kinds of attributes</span>
+
+<span class="s1">Instance attributes → defined in __init__() with self</span>
+
+<span class="s1">Class attributes → shared across all instances</span>
+
+<span class="s1">Dynamic attributes → added after object creation</span>
+
+<span class="s1">Where are attributes stored ?</span>
+
+<span class="s1">object.__dict__</span>
+
+<span class="s1">'''</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Dog</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+<span class="n">fido</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s2">"Fido"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fido</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">)</span>  <span class="c1"># {'name': 'Fido'}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'''</span>
+
+<span class="s1">What are dynamic attributes?</span>
+
+<span class="s1">Dynamic attributes are attributes that you add to an object after it's been created, not defined in the class body or __init__.</span>
+
+<span class="s1">'''</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+
+About attributes :
+
+📌 Special kinds of attributes
+
+Instance attributes → defined in __init__() with self
+
+Class attributes → shared across all instances
+
+Dynamic attributes → added after object creation
+
+Where are attributes stored ?
+
+object.__dict__
+
+
+{'name': 'Fido'}
+
+
+What are dynamic attributes?
+
+Dynamic attributes are attributes that you add to an object after it's been created, not defined in the class body or __init__.
+
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dcbc3067-3711-417f-857f-55c35f148c1e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7531,8 +7613,35 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7ea2706e-01ea-4507-b592-033fbc1f8ca1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Descriptors :"</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Descriptors :
+</pre>
 </div>
 </div>
 </div>
@@ -7604,47 +7713,12 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>
-
-Descriptors in Python are a powerful, advanced feature that most people use without even knowing it — through things like 
-
-@property, 
-staticmethod, 
-and classmethod.
-
-Let’s explain descriptors clearly, from the ground up, with examples.
-
-🧠 What is a Descriptor?
-A descriptor is any object that defines at least one of these special methods:
-
-__get__(self, instance, owner)
-__set__(self, instance, value)
-__delete__(self, instance)
-✅ If an object implements any of those methods, it is a descriptor.
-
-🎯 Why do descriptors exist?
-They let you customize how attribute access works on an object.
-
-A descriptor lets you control what happens when someone does:
-object.attribute or object.attribute = value
-
-✅ You can use descriptors to:
-
-Add validation
-Log access
-Compute values dynamically
-Manage internal storage
-Build properties, methods, and more
-
-When descriptors are used
-
-Descriptors only work when:
-
-They are class attributes, not instance attributes.
-You access them through an instance (or class).
-
-
+<span class="ansi-cyan-intense-fg ansi-bold">  Cell </span><span class="ansi-green-intense-fg ansi-bold">In[3], line 44</span>
+<span class="ansi-yellow-intense-fg ansi-bold">    Descriptors are:</span>
+<span class="ansi-white-intense-fg ansi-bold">                ^</span>
+<span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> invalid syntax
 </pre>
 </div>
 </div>
@@ -7683,12 +7757,12 @@ You access them through an instance (or class).
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=fd060dbc-9072-4b1c-a788-b99097c97a42">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b60f8818-171f-4c35-aab2-3ebad0871445">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"An example given in the class :"</span><span class="p">)</span>
@@ -7697,25 +7771,197 @@ You access them through an instance (or class).
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>An example given in the class :
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9974d63a-deee-48ef-993b-e34f6c1b7a48">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d6b2a813-6cae-466e-85b1-acdd0d414a55">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># This defines a descriptor NameDescriptor that manages access to a name attribute on a Person object.</span>
+<span class="c1"># Descriptors are a way to customize attribute access, like what happens when you get, set, or delete an attribute.</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=54563ce4-93aa-4078-8e18-163c664951f2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 🧱 NameDescriptor class</span>
+<span class="c1"># This is a descriptor because it defines at least one of the special methods:</span>
+<span class="c1"># __get__(self, instance, owner)</span>
+<span class="c1"># __set__(self, instance, value)</span>
+<span class="c1"># __delete__(self, instance)</span>
+<span class="c1"># It manages access to an internal attribute (_name) on the Person object.</span>
+
+<span class="k">class</span> <span class="nc">NameDescriptor</span><span class="p">:</span>
+    
+    <span class="c1"># instance is a Person object</span>
+    <span class="c1"># owner is Person class</span>
+    
+    <span class="k">def</span> <span class="fm">__get__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">,</span> <span class="n">owner</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'__get__ is called'</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">instance</span><span class="o">.</span><span class="n">_name</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">'World'</span>
+
+    <span class="k">def</span> <span class="fm">__set__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'__set__ is called'</span><span class="p">)</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="k">def</span> <span class="fm">__delete__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'__delete__ is called'</span><span class="p">)</span>
+        <span class="k">del</span> <span class="n">instance</span><span class="o">.</span><span class="n">_name</span>
+
+
+<span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="c1"># def _get_name(self):</span>
+    <span class="c1">#     return self._name</span>
+    <span class="c1">#</span>
+    <span class="c1"># name = property(fget=_get_name)</span>
+    
+    <span class="n">name</span> <span class="o">=</span> <span class="n">NameDescriptor</span><span class="p">()</span>  <span class="c1"># Connects descriptor to the Person class</span>
+
+<span class="c1"># The Person class has an attribute name that is a descriptor</span>
+<span class="c1"># It operates on the internal _name field</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+    
+   <span class="n">john</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">"John"</span><span class="p">)</span>    <span class="c1"># sets _name directly</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">john</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>         <span class="c1"># triggers __get__ → prints and returns "John"</span>
+
+   <span class="n">john</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">"Johnny"</span>     <span class="c1"># triggers __set__ → updates _name</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">john</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>         <span class="c1"># __get__ → returns "Johnny"</span>
+
+   <span class="k">del</span> <span class="n">john</span><span class="o">.</span><span class="n">name</span>            <span class="c1"># triggers __delete__ → removes _name</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">john</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>         <span class="c1"># __get__ → catches AttributeError → returns "World"</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=41cc8fe9-d7bb-4cc6-b008-a39e4a2211c3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'''</span>
+
+<span class="s1">__get__</span>
+
+<span class="s1">Called when you access person.name</span>
+<span class="s1">Tries to return instance._name</span>
+<span class="s1">If _name doesn’t exist (e.g. it was deleted), returns "World"</span>
+
+<span class="s1">🔹 __set__</span>
+
+<span class="s1">Called when you do person.name = "Alice"</span>
+<span class="s1">Stores the value inside the instance under _name</span>
+
+<span class="s1">__delete__</span>
+
+<span class="s1">Called when you do del person.name</span>
+<span class="s1">Deletes the _name attribute from the instance.</span>
+
+<span class="s1">'''</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c5196271-9efd-4a46-b60e-9b5e26cbd32c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"A Simplified Version Using @property :"</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'@property getter is called'</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">'_name'</span><span class="p">,</span> <span class="s1">'World'</span><span class="p">)</span>
+
+    <span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'@property setter is called'</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@name</span><span class="o">.</span><span class="n">deleter</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'@property deleter is called'</span><span class="p">)</span>
+        <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+
+
+<span class="n">john</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">"John"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">john</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>      <span class="c1"># Triggers getter</span>
+<span class="n">john</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">"Johnny"</span>  <span class="c1"># Triggers setter</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">john</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<span class="k">del</span> <span class="n">john</span><span class="o">.</span><span class="n">name</span>         <span class="c1"># Triggers deleter</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">john</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>      <span class="c1"># Triggers fallback return "World"</span>
+
+<span class="c1"># When to use each?</span>
+<span class="c1"># Use @property when managing simple attribute access with logic (e.g., validation, fallback)</span>
+<span class="c1"># Use a descriptor class if you want to reuse the logic across multiple attributes or classes, or implement advanced behaviors</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=aa871de0-857d-4568-b01c-e970a14724d0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=fd060dbc-9072-4b1c-a788-b99097c97a42">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"A more complex example given in the class :"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9974d63a-deee-48ef-993b-e34f6c1b7a48">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">CurrencyType</span><span class="p">:</span>
@@ -7799,21 +8045,6 @@ You access them through an instance (or class).
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1000.0 usd = 920.0 euro = 770.0 pound = 86950.0 rupee
-649.3506493506493 usd = 597.4025974025974 euro = 499.99999999999994 pound = 56461.03896103896 rupee
-115.00862564692352 usd = 105.80793559516964 euro = 88.55664174813111 pound = 10000.0 rupee
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=fe0e31aa-5558-4d85-b54a-89b20b5b0dde">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7828,12 +8059,12 @@ You access them through an instance (or class).
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4dcfb57c-4317-4e99-a677-2dd88efc87c0">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4dcfb57c-4317-4e99-a677-2dd88efc87c0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span>
@@ -7900,74 +8131,6 @@ You access them through an instance (or class).
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>So why is _usd used specifically?
-
-1. ✅ To store one single internal value (USD)
-All other currencies (Euro, Pound, Rupee) are derived from USD.
-
-usd, euro, pound, rupee are virtual attributes controlled by descriptors.
-
-Here, _usd is not passed as an argument to the method.
-
-Yet it's used as: instance._usd
-
-So how does this work?
-
-__get__(self, instance, owner)
-self = the descriptor instance (e.g. the Euro, Usd, Pound, etc.)
-
-instance = the instance of the class where the descriptor is used
-→ in your case, a Currency object
-
-✅ So instance._usd just accesses an attribute of the Currency object.
-
-So where is _usd actually coming from?
-
-It's not passed as an argument.
-It is created dynamically inside the descriptor like this:
-
-instance._usd = value / self.conversion
-
-_usd	A private variable on the instance, dynamically created
-
-That’s why it “just works”
-In Python, you don’t have to predefine instance variables like _usd.
-You can create them on the fly:
-
-class A:
-    pass
-
-a = A()
-a.x = 42  # totally valid
-
-So in plain words:
-
-_usd is not passed to the descriptor — it is stored on the instance (Currency object) by the descriptor itself during assignment.
-
-
-
-
-🧠 In plain words:
-
-_usd does not need to be declared in advance.
-
-Python lets you add attributes to objects on the fly, unless restricted (e.g., with __slots__).
-
-So self._usd = ... creates _usd the first time it's used.
-
-
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=94ae5c2f-501f-4e91-96eb-dfe5b79efb55">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8011,7 +8174,7 @@ So self._usd = ... creates _usd the first time it's used.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">CurrencyConverter</span><span class="p">:</span>
@@ -8083,12 +8246,12 @@ So self._usd = ... creates _usd the first time it's used.
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d6cb6907-74ca-476c-9d8a-6e51f2cbfcbe">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d6cb6907-74ca-476c-9d8a-6e51f2cbfcbe">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'''</span>
@@ -8120,37 +8283,12 @@ So self._usd = ... creates _usd the first time it's used.
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>
-
-Simplified Code (no _usd logic reuse)
-
-Keep __get__ and __set__ to demonstrate descriptor behavior
-
-Remove the shared _usd variable
-
-Use per-currency storage (e.g. self._usd, self._euro, etc.)
-
-Used getattr() / setattr()	Dynamically access attributes like _usd, _euro, etc.
-
-
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3a48cfc9-f5d6-4097-93cd-692cf0167777">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3a48cfc9-f5d6-4097-93cd-692cf0167777">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Descriptor base class for each currency type"</span><span class="p">)</span>
@@ -8159,25 +8297,12 @@ Used getattr() / setattr()	Dynamically access attributes like _usd, _euro, etc.
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Descriptor base class for each currency type
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=75737c27-e333-48ec-b6ea-5fada5f8f6b7">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=75737c27-e333-48ec-b6ea-5fada5f8f6b7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Descriptor base class for each currency type</span>
@@ -8260,21 +8385,6 @@ Used getattr() / setattr()	Dynamically access attributes like _usd, _euro, etc.
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>$1000.0 USD = €920.0 EUR = £770.0 GBP = ₹86950.0 INR
-$649.35 USD = €597.4 EUR = £500.0 GBP = ₹56461.04 INR
-$115.01 USD = €105.81 EUR = £88.56 GBP = ₹10000.0 INR
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5d55878d-a09a-4422-93ab-5d0623908d49">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8290,6 +8400,102 @@ $115.01 USD = €105.81 EUR = £88.56 GBP = ₹10000.0 INR
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5cdbfef4-b2b4-4641-9c9c-a46d33871a62">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">" Dynamic Attributes :"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=901f13e6-86a3-44a6-90de-37c2c1bf399f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'''</span>
+
+<span class="s1">Dynamic attributes are attributes that you add to an object after it's been created, not defined in the class body or __init__.</span>
+
+<span class="s1">✅ They’re created on the fly using assignment syntax or functions like setattr().</span>
+
+<span class="s1">'''</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="n">dog</span> <span class="o">=</span> <span class="n">Animal</span><span class="p">()</span>
+<span class="n">dog</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">"Fido"</span>            <span class="c1"># dynamic attribute</span>
+<span class="n">dog</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="mi">5</span>                  <span class="c1"># another dynamic attribute</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>              <span class="c1"># Fido</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="n">age</span><span class="p">)</span>               <span class="c1"># 5</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">)</span>  <span class="c1"># {'name': 'Fido', 'age': 5}</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'''Alternative: Using setattr()'''</span><span class="p">)</span>
+
+<span class="c1"># You can also add dynamic attributes like this:</span>
+
+<span class="nb">setattr</span><span class="p">(</span><span class="n">dog</span><span class="p">,</span> <span class="s2">"breed"</span><span class="p">,</span> <span class="s2">"Labrador"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="n">breed</span><span class="p">)</span>  <span class="c1"># Labrador</span>
+
+<span class="c1"># equivalent with </span>
+
+<span class="n">dog</span><span class="o">.</span><span class="n">breed</span> <span class="o">=</span> <span class="s2">"Labrador"</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'''Detecting dynamic attributes'''</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">dog</span><span class="p">,</span> <span class="s1">'age'</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Age exists"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">dog</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">))</span>      <span class="c1"># → Fido</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">)</span>              <span class="c1"># shows all instance-level attributes</span>
+
+<span class="c1"># Risk	: Easy to create unintended fields by mistake</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8aad6ab6-a09c-4e02-a826-418b69244935">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=59dd32a3-a675-48df-9d31-b5c9ad3d9159">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a95caa79-03e0-4190-b65d-761c652cc8bd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
