@@ -1,0 +1,8 @@
+Alice -> ALICE
+Bob -> BOB
+Charles -> CHARLES
+Xenia -> XENIA
+Kayak -> KAYAK
+kayak -> KAYAK
+Accept -> ACCEPT
+David -> DAVID
